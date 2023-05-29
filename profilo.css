@@ -1,0 +1,259 @@
+a{
+    cursor:pointer;
+}
+
+body{
+    color: rgba(26, 26, 26, .7);
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+    body {
+      font-size: 14px;
+    }
+}
+
+footer,
+.Links{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header{
+    color:white;
+    border-color: black;
+    background-image: url("https://marketplace.canva.com/EAEmaJ8LNJs/1/0/1600w/canva-semplice-lavoro-banner-linkedin-yvslxf2GKY4.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+     
+}
+
+header strong{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 780px;
+    text-align: center;
+    line-height: 200px;
+}
+
+@media (max-width: 500px) {
+    #contenit strong{
+      font-size: 1em;
+      letter-spacing: 4px;
+    }
+
+}
+
+
+
+#overlay{
+    /* display: flex;
+    flex-direction: column;*/ 
+    background-color: rgba(0, 0, 0, 0.1 );
+    height: 100%;
+    width: 100%;
+    /* z-index: 1; */
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 500px) {
+    overlay {
+        height: 300px;
+        line-height: 1.2;
+    }
+}
+
+nav .Links {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+}
+
+.Links a{
+    display: flex;
+    border: 2px solid rgba(75, 179, 54, 0.884);
+    background-color: rgba(75, 179, 54, 0.884);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    max-width: min-content;
+}
+
+.Links a:hover{
+    background-color: rgba(185, 252, 61, 0.041);
+    border: 0px;
+    color: black;
+}
+
+#profilo{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+@media (max-width: 500px) {
+.Links {
+    display: none;
+
+}
+
+#menu {
+    display: block;
+
+}
+}
+
+#tutto{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tutto label{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label img{
+    margin: 5%;
+    width: 30%;
+    height: 30%;
+}
+
+label a{
+    color: rgba(26, 26, 26, .7);
+    font-family: 'Lora', serif;
+    padding:10px;
+}
+
+label a:hover{
+    background-color: rgba(75, 179, 54, 0.884);
+    border-radius: 100px;
+    color:white;
+}
+
+/* label:hover{
+    cursor: pointer;
+    background-color:#daf5cc;
+    border: solid #dcdcdc 1px;
+    border-radius: 100px;
+} */
+
+footer{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    color:rgba(255, 255, 255, 0.8);
+    /* padding: 75px; */
+    text-align: center;
+    justify-content: center;
+    padding: 75px 0px;
+    height: 100px;
+    line-height: 2;
+    font-weight: 200;
+}
+
+
+@media (max-width:500px){
+    footer{
+        height: 70px;
+        padding: 25px 0px;
+    }
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, .4);
+}
+
+.hidden{
+    display: none;
+}
+
+.Profilo {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 3px solid white;
+}
+
+.Nome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: black;
+
+}
+
+.aggiornamento {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-size: 9px;
+    border-bottom: 1px solid lightgray;
+    color: inherit;
+
+}
+
+@media (max-width: 500px) {
+	.Nome {
+        /*font-size: 40px;*/
+	  font-size: 1em;
+	}
+    .aggiornamento{
+        font-size: 1em;
+    }
+}
